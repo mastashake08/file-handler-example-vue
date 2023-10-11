@@ -9,6 +9,6 @@ jobs:
     - id: Build-Vue
       uses: xRealNeon/VuePagesAction@1.0.1
       with:
-        username: 'mastashake08
+        username: 'mastashake08'
         reponame: 'file-handler-example-vue'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
