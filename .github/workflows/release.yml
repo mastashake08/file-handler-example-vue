@@ -7,8 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - id: Build-Vue
-      uses: xRealNeon/VuePagesAction@1.0.1
+      uses: actions/setup-node@v3
       with:
-        username: 'mastashake08'
-        reponame: 'file-handler-example-vue'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        node-version: 16
+        registry-url: https://registry.npmjs.org/
