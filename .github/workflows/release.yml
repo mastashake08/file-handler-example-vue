@@ -11,4 +11,4 @@ jobs:
       with:
         node-version: 16
         registry-url: https://registry.npmjs.org/
-    - run: npm deploy
+    - run: npm run deploy
