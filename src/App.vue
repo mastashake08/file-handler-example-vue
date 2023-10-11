@@ -3,17 +3,13 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Upload and examine files securely in the browser."></HelloWorld>
     <button @click="getFile">Get File</button>
-    <div>
+    <div id="metadata">
       Name: {{ dataView.name }}
     </div>
     <hr/>
     <div>
       Size: {{ dataView.size }}
     </div>
-    <hr/>
-    <!-- <div>
-      Text: {{ dataView.text }}
-    </div> -->
     <hr/>
     <div>
       Last Modified: {{ dataView.lastModifiedDate }}
