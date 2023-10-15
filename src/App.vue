@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { FileSystem } from 'shake-file'
+import { FileSystem, ShakeFile } from 'shake-file'
 import HelloWorld from './components/HelloWorld.vue'
 export default {
     name: 'App',
@@ -31,16 +31,20 @@ export default {
             file: {},
             directory: {},
             fileSystem: {},
-            dataView: {}
+            dataView: {},
+            shakeFile: {}
         };
     },
     mounted() {
         this.fileSystem = new FileSystem();
+
     },
     methods: {
         async getFile() {
             this.file = await this.fileSystem.getFile();
             this.dataView = await this.fileSystem.getFileContents();
+           this.shakeFile = new ShakeFile({file: this.file, showDom: true})
+           console.log(this.shakeFile.getStream().getReader())
         },
         async getDir() {
             this.directory = await this.fileSystem.getDir();

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/file-handler-example-vue/precache-manifest.de9d05801f2f603beff8466a428e1b76.js"
+  "/file-handler-example-vue/precache-manifest.17f8da6cf2bd1ad9f5e827c490d4eb99.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "shake-file-editor"});
